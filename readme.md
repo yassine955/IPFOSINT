@@ -20,6 +20,10 @@ Scrapy: `python -m pip install Scrapy`
 # Start je script (Kies jouw script)
 
 Ga naar jouw folder: `cd <vliegvelden | vliegtuigen | brandstoffen>`
+
 Start jouw script <Brandstoffen>: `scrapy crawl olieonline`
+  
 Start jouw script <Vliegtuigen>: `scrapy crawl koopvliegtuig`
+  
 Start jouw script <Vliegvelden>: `scrapy crawl vliegvelden_lijst`
+  
