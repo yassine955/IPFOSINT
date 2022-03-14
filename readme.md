@@ -1,15 +1,21 @@
 # Environment Opzetten (LET OP: Dit hoeft maar een keer)
 
 Environment opzetten: `python -m venv venv`
+
 Environment activeren: `.\venv\Scripts\Activate.ps1`
 
 # Library's installeren
 
 Installeren van tools: `python -m pip install -r requirements.txt`
+
 **Als het bovenstaande niet werkt, doe dan dit:**
+
 goslate: `python -m pip install goslate`
+
 itemadapter: `python -m pip install itemadapter`
+
 Scrapy: `python -m pip install Scrapy`
+
 
 # Start je script (Kies jouw script)
 
