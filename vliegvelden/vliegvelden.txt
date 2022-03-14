@@ -1,0 +1,163 @@
+2022-02-28 19:33:37 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: vliegvelden)
+2022-02-28 19:33:37 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.1.0, Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1m  14 Dec 2021), cryptography 36.0.1, Platform Windows-10-10.0.22000-SP0
+2022-02-28 19:33:37 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-02-28 19:33:37 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'vliegvelden',
+ 'LOG_FILE': 'vliegvelden.txt',
+ 'NEWSPIDER_MODULE': 'vliegvelden.spiders',
+ 'SPIDER_MODULES': ['vliegvelden.spiders']}
+2022-02-28 19:33:37 [scrapy.extensions.telnet] INFO: Telnet Password: 5740f2f837ae8b83
+2022-02-28 19:33:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-02-28 19:33:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-02-28 19:33:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-02-28 19:33:37 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-02-28 19:33:37 [scrapy.core.engine] INFO: Spider opened
+2022-02-28 19:33:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-02-28 19:33:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2022-02-28 19:33:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland> (referer: None)
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Ameland', 'naam': 'Ameland Airport Ballum', 'Latitude': 53.45277777777778, 'Longitude': 5.683888888888889}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Haarlemmermeer', 'naam': 'Luchthaven Schiphol', 'Latitude': 52.30833333333333, 'Longitude': 4.760833333333333}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Apeldoorn', 'naam': 'Teuge International Airport', 'Latitude': 52.24138888888889, 'Longitude': 6.046666666666667}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Beek', 'naam': 'Maastricht Aachen Airport', 'Latitude': 50.9125, 'Longitude': 5.769444444444445}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Hoeven', 'naam': 'Breda International Airport', 'Latitude': 51.55472222222222, 'Longitude': 4.5525}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Budel', 'naam': 'Kempen Airport', 'Latitude': 51.256388888888885, 'Longitude': 5.601944444444444}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Den Helder', 'naam': 'Vliegveld de Kooy', 'Latitude': 52.9225, 'Longitude': 4.782777777777778}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Drachten', 'naam': 'Vliegveld Drachten', 'Latitude': 53.11805555555556, 'Longitude': 6.128333333333333}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Eindhoven', 'naam': 'Eindhoven Airport', 'Latitude': 51.45055555555556, 'Longitude': 5.3741666666666665}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Enschede', 'naam': 'Twente Airport', 'Latitude': 52.274166666666666, 'Longitude': 6.886666666666666}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Groningen', 'naam': 'Groningen Airport Eelde', 'Latitude': 53.120555555555555, 'Longitude': 6.578055555555555}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Hilversum', 'naam': 'Vliegveld Hilversum', 'Latitude': 52.192499999999995, 'Longitude': 5.147222222222223}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Hoogeveen', 'naam': 'Vliegveld Hoogeveen', 'Latitude': 52.73083333333334, 'Longitude': 6.515833333333333}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Lelystad', 'naam': 'Lelystad Airport', 'Latitude': 52.45527777777778, 'Longitude': 5.523055555555556}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Middelburg', 'naam': 'Vliegveld Midden-Zeeland', 'Latitude': 51.51222222222222, 'Longitude': 3.729166666666667}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Middenmeer', 'naam': 'Vliegveld Middenmeer', 'Latitude': 52.81666666666667, 'Longitude': 5.027777777777778}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Numansdorp', 'naam': 'Vliegveld Numansdorp', 'Latitude': 51.753055555555555, 'Longitude': 4.455277777777778}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Rotterdam', 'naam': 'Rotterdam The Hague Airport', 'Latitude': 51.9525, 'Longitude': 4.434444444444445}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Stadskanaal', 'naam': 'Vliegveld Stadskanaal', 'Latitude': 52.99583333333334, 'Longitude': 7.020833333333333}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Texel', 'naam': 'Texel International Airport', 'Latitude': 53.11527777777778, 'Longitude': 4.833611111111111}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Venlo', 'naam': 'TrafficPort Venlo', 'Latitude': 51.006388888888885, 'Longitude': 6.0008333333333335}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Winschoten', 'naam': 'Vliegveld Oostwold', 'Latitude': 53.20805555555556, 'Longitude': 7.041111111111111}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Concordia', 'naam': 'F.D. Roosevelt Airport', 'Latitude': 17.49638888888889, 'Longitude': 62.97916666666667}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Kralendijk', 'naam': 'Bonaire International Airport', 'Latitude': 12.130833333333333, 'Longitude': 68.26833333333333}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'The Bottom', 'naam': 'Juancho E. Yrausquin Airport', 'Latitude': 17.64527777777778, 'Longitude': 63.220555555555556}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Ede', 'naam': 'Vliegbasis Deelen', 'Latitude': 52.00083333333333, 'Longitude': 5.014444444444444}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Gilze-Rijen', 'naam': 'Vliegbasis Gilze-Rijen', 'Latitude': 51.00944444444445, 'Longitude': 4.0152777777777775}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Leeuwarden', 'naam': 'Vliegbasis Leeuwarden', 'Latitude': 53.00361111111111, 'Longitude': 5.0125}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Uden', 'naam': 'Vliegbasis Volkel', 'Latitude': 51.01083333333333, 'Longitude': 5.011388888888889}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Venray', 'naam': 'Vliegbasis De Peel', 'Latitude': 51.00861111111111, 'Longitude': 5.014166666666667}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Woensdrecht', 'naam': 'Vliegbasis Woensdrecht', 'Latitude': 51.0075, 'Longitude': 4.005833333333333}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Arnhem', 'naam': 'Vliegveld Terlet', 'Latitude': 52.05722222222222, 'Longitude': 5.924444444444445}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Axel', 'naam': 'Zweefvliegveld Axel\n', 'Latitude': 51.25555555555555, 'Longitude': 3.891388888888889}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Biddinghuizen', 'naam': 'Zweefvliegveld Biddinghuizen\n', 'Latitude': 52.42916666666667, 'Longitude': 5.674166666666667}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Castricum', 'naam': 'Zweefvliegveld Castricum\n', 'Latitude': 52.53666666666666, 'Longitude': 4.626666666666667}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Haamstede', 'naam': 'vliegveld Haamstede', 'Latitude': 51.70888888888889, 'Longitude': 3.7122222222222225}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Lemelerveld', 'naam': 'Vliegveld Salland', 'Latitude': 52.467777777777776, 'Longitude': 6.332777777777777}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Malden', 'naam': 'Zweefvliegveld Malden', 'Latitude': 51.78583333333333, 'Longitude': 5.880000000000001}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Marknesse', 'naam': 'Zweefvliegveld De Voorst\n', 'Latitude': 52.68472222222222, 'Longitude': 5.910555555555556}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Nistelrode', 'naam': 'Zweefvliegveld Nistelrode', 'Latitude': 51.68333333333333, 'Longitude': 5.549444444444444}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Noordwijk', 'naam': 'Zweefvliegveld Langeveld\n', 'Latitude': 52.297777777777775, 'Longitude': 4.5136111111111115}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Schinveld', 'naam': 'Zweefvliegveld Schinveld\n', 'Latitude': 50.981944444444444, 'Longitude': 6.0025}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Slootdorp', 'naam': 'Zweefvliegveld Wieringermeer\n', 'Latitude': 52.81861111111112, 'Longitude': 4.9286111111111115}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Soesterberg', 'naam': 'Zweefvliegveld Soesterberg', 'Latitude': 52.12722222222222, 'Longitude': 5.276111111111111}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Valkenburg', 'naam': 'Zweefvliegveld Valkenburg', 'Latitude': 52.16611111111111, 'Longitude': 4.418055555555556}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Veendam', 'naam': 'Zweefvliegveld Veendam\n', 'Latitude': 53.08444444444444, 'Longitude': 6.823611111111111}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Venlo', 'naam': 'Zweefvliegveld Venlo', 'Latitude': 51.363055555555555, 'Longitude': 6.216111111111111}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Amsterdam', 'naam': 'Amsterdam Heliport', 'Latitude': 52.00666666666667, 'Longitude': 4.013333333333334}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Rotterdam', 'naam': 'Heliport Maasvlakte', 'Latitude': 51.01611111111111, 'Longitude': 4.000277777777778}
+2022-02-28 19:33:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://nl.wikipedia.org/wiki/Lijst_van_vliegvelden_in_Nederland>
+{'locatie': 'Vlieland', 'naam': 'Vlieland Heliport', 'Latitude': 53.29694444444444, 'Longitude': 5.085555555555556}
+2022-02-28 19:33:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-02-28 19:33:38 [scrapy.extensions.feedexport] INFO: Stored jl feed (50 items) in: vliegvelden.jl
+2022-02-28 19:33:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 255,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 15541,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.237305,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 2, 28, 18, 33, 38, 211517),
+ 'httpcompression/response_bytes': 62291,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 51,
+ 'log_count/INFO': 11,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 2, 28, 18, 33, 37, 974212)}
+2022-02-28 19:33:38 [scrapy.core.engine] INFO: Spider closed (finished)
