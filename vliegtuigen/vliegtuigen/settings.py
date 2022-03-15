@@ -8,7 +8,7 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 BOT_NAME = 'vliegtuigen'
-DOWNLOAD_DELAY = 0.25
+DOWNLOAD_DELAY = 0.3
 SPIDER_MODULES = ['vliegtuigen.spiders']
 NEWSPIDER_MODULE = 'vliegtuigen.spiders'
 
