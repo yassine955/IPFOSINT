@@ -7,14 +7,20 @@ class VliegveldenLijstSpider(scrapy.Spider):
 
 
     def parse(self, response):
+        # Hier pak je de body van de table
         table = response.xpath('//*[@class="wikitable"]//tbody')
+
+        # Vervolgens pak je hier alle rijen die in die table zitten
         rows = table.xpath('//tr')
-        # links = response.xpath('/html/body/div[3]/div[3]/div[5]/div[1]/table[1]/tbody/tr[*]/td[5]/small/span/a/@href').getall()
+
+        # Dit is een functie die coontroleert of een waarde een getal
         def containsNumber(value):
             for character in value:
                 if character.isdigit():
                     return True
             return False
+
+
 
         for row in rows:
             locatie = row.xpath('td[1]//text()').extract_first()
@@ -22,23 +28,13 @@ class VliegveldenLijstSpider(scrapy.Spider):
             coords = row.xpath('td[5]/small/span/a/text() | td[5]/a/text()').extract_first()
             coords = str(coords).replace("' ", "'").replace(' NB', 'N').replace(' OL', 'E').replace('° ', '°').replace('″', '"').replace("'N", '"N').replace("'E", '"E').replace('′ ', "'").replace(' WL', "W").replace(' N', 'N').replace('"NB', '"N').replace("'OL", '"E').replace('N ', "N, ").replace('" E', '"E').replace(' °', '°').strip()
 
+        #    als die niet een getal is, ga dan verder 
             if not containsNumber((str(locatie))):
+                # Als bronnen er niet is, ga dan verder 
                 if not "Bronnen" in str(locatie):
+                    # Als locatie niet null is 
                     if locatie is not None:
-                        # print(VliegveldenLijstSpider.conversion(lat), VliegveldenLijstSpider.conversion(lon) )
-                        # INPUT = """52°49'07"N, 4°55'43"E"""
-                        # INPUT = f"""{coords}"""
-                        # yield {
-                        #     "INPUT": INPUT
-                        # }
-                        # print(coords)
-                        
-                       
-                        # coordi.append(coords)
-
-                        # print(coordi)
-                        #(f"""{x}""")) 
-
+                        # Hier worden de wiki coords,omgezet naar speciale cords voor kibana 
                         coordsAll = parse_dms_string(coords)
 
                         yield {
@@ -47,21 +43,3 @@ class VliegveldenLijstSpider(scrapy.Spider):
                             "Latitude": coordsAll[0],
                             "Longitude": coordsAll[1]
                         }
-                       
-                        # yield response.follow(link, callback=self.getCoords)
-
-
-    # def getCoords(self, response):
-        
-    #     wrapper = response.xpath('//*[@class="geo"]')
-
-    #     for item in wrapper:
-    #         lat = item.xpath('span[1]/text()').get() 
-    #         long = item.xpath('span[2]/text()').get()
-        
-    #     with open('output.csv', 'a') as file:  # Use file to refer to the file object
-    #         file.write(f'{lat}, {long}\n')
-
-
-        
-        
